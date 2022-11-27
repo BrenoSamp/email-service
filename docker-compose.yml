@@ -1,0 +1,7 @@
+version: '3.1'
+services:
+  queue:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: 'python consumer.py'
