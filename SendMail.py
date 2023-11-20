@@ -28,7 +28,7 @@ def sendMessageMail(nome, ticketId, destinatario):
     <p>Uma nova mensagem foi cadastrada no ticket de id: {ticketId}</p>
     """
     msg = email.message.Message()
-    msg['Subject'] = "Nova mensagem para o ticket #" + ticketId
+    msg['Subject'] = "Nova mensagem para o ticket #" + str(ticketId)
     msg['From'] = "bymdeskmail@gmail.com"
     msg['To'] = destinatario
     password = "lbzyllhaiglciawo"
