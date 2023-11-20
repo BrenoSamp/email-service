@@ -5,3 +5,8 @@ services:
       context: .
       dockerfile: Dockerfile
     command: 'python consumer.py'
+  message_queue:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: 'python messageConsumer.py'
